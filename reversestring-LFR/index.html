@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse String</title>    
+</head>
+<body>
+<link rel="stylesheet" href="style.css">
+
+<main class="contenedor">
+    <section class="tarjeta">
+        <h1>Invertir cadena</h1>
+        <p class="descripcion">Introduce un texto para ver su versión invertida.</p>
+
+        <form id="formulario-inversion" novalidate>
+            <div class="grupo-campo">
+                <label for="cadena">Cadena</label>
+                <input
+                    type="text"
+                    id="cadena"
+                    name="Cadena"
+                    maxlength="200"
+                    placeholder="Escribe una cadena"
+                    aria-describedby="ayuda-cadena"
+                >
+                <small id="ayuda-cadena">Máximo 200 caracteres.</small>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="cadenaInvertida">Cadena invertida</label>
+                <input
+                    type="text"
+                    id="cadenaInvertida"
+                    name="CadenaInvertida"
+                    readonly
+                    placeholder="Resultado al pulsar el botón"
+                >
+            </div>
+
+            <div class="grupo-campo">
+                <label for="cadenaInvertida2">Cadena invertida 2</label>
+                <input
+                    type="text"
+                    id="cadenaInvertida2"
+                    name="CadenaInvertida2"
+                    readonly
+                    placeholder="Resultado en tiempo real"
+                >
+            </div>
+
+            <button type="submit" id="botonInvertir" name="Invertir" hidden>Invertir</button>
+        </form>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

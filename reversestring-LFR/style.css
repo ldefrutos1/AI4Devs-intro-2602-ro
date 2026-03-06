@@ -1,0 +1,105 @@
+:root {
+    --color-fondo: #f4f7fb;
+    --color-tarjeta: #ffffff;
+    --color-texto: #1f2937;
+    --color-secundario: #6b7280;
+    --color-borde: #d1d5db;
+    --color-primario: #2563eb;
+    --color-primario-hover: #1d4ed8;
+    --sombra: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.contenedor {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+}
+
+.tarjeta {
+    width: 100%;
+    max-width: 520px;
+    background: var(--color-tarjeta);
+    border-radius: 14px;
+    box-shadow: var(--sombra);
+    padding: 32px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 1.9rem;
+}
+
+.descripcion {
+    margin: 0 0 24px;
+    color: var(--color-secundario);
+}
+
+.grupo-campo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid var(--color-borde);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-primario);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+}
+
+input[readonly] {
+    background: #f9fafb;
+    color: #374151;
+}
+
+small {
+    display: inline-block;
+    margin-top: 6px;
+    color: var(--color-secundario);
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 16px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: var(--color-primario);
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: var(--color-primario-hover);
+}
+
+button:active {
+    transform: translateY(1px);
+}
